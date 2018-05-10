@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0,10,1000)
+y1 = np.sin(x)
+y2 = np.cos(x)
+plt.figure(figsize=(8,4))
+plt.plot(x,y1,label="$sin(x)$",color="red",linewidth=2)
+plt.plot(x,y2,label="$cos(x)$",color="blue",linewidth=2)
+plt.xlabel("Time(s)")
+plt.ylabel("Volt")
+plt.legend("sinx")
+plt.legend("cosx")
+plt.title("two example")
+plt.savefig("sinx cosx.png")
+print (plt.savefig)
